@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0">
+
+  <title>SIRAFMZ</title>
+
+  <!-- CSS -->
+  <link
+  rel="stylesheet"
+  href="css/style.css">
+
+  <!-- FONT AWESOME -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+</head>
+
+<body>
+
+<video
+class="bg-video"
+autoplay
+muted
+loop
+playsinline>
+
+  <source
+  src="vid/sirafmz.mp4"
+  type="video/mp4">
+
+</video>
+
+<div class="overlay"></div>
+
+<div
+class="status-view"
+id="statusView">
+
+  <div class="status-top">
+
+    <div class="status-user">
+
+      <img src="img/1.png">
+
+      <div>
+
+        <h3>SIRAFMZ</h3>
+
+        <p id="statusCaption">
+          Status
+        </p>
+
+      </div>
+
+    </div>
+
+    <button id="closeStatus">
+
+      <i class="fas fa-times"></i>
+
+    </button>
+
+  </div>
+
+  <div
+  class="status-content"
+  id="statusContent"></div>
+
+</div>
+
+<div class="container">
+
+  <div class="top-bar">
+
+    <!-- CLOCK -->
+
+    <div class="time-box">
+
+      <i class="fas fa-clock"></i>
+
+      <span id="clock">
+        Loading...
+      </span>
+
+    </div>
+
+    <!-- VIEW -->
+
+    <div class="view-box">
+
+      <i class="fas fa-eye"></i>
+
+      <span id="views">
+        0
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="profile-area">
+
+    <!-- PROFILE LEFT -->
+
+    <div
+    class="profile-left"
+    id="openStatus">
+
+      <img
+      src="img/profile.png"
+      class="profile-img">
+
+      <span class="online"></span>
+
+    </div>
+
+    <!-- PROFILE RIGHT -->
+
+    <div class="profile-right">
+
+      <h1>
+        SIRAFMZ
+      </h1>
+
+      <p>
+        welcome to my official link
+      </p>
+
+      <div class="listen">
+
+        <i class="fas fa-headphones"></i>
+
+        Listening Music
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div
+  class="stories"
+  id="stories"></div>
+
+  <div
+  class="links"
+  id="links"></div>
+
+</div>
+
+<div class="quote-box">
+
+  <div class="quote-title">
+
+    SIRAFMZ said :
+
+  </div>
+
+  <p
+  class="quote-text"
+  id="quote">
+
+    Loading quote...
+
+  </p>
+
+</div>
+
+<div class="music-player">
+
+  <!-- COVER -->
+
+  <img
+  src="img/2.png"
+  id="musicImage">
+
+  <!-- INFO -->
+
+  <div class="music-info">
+
+    <!-- TITLE -->
+
+    <h3
+    id="musicTitle"
+    class="music-title">
+
+      Tekan Next Agar Menyala...
+
+    </h3>
+
+    <!-- ARTIST -->
+
+    <div
+    class="music-name"
+    id="musicArtist">
+
+      SIRAFMZ
+
+    </div>
+
+    <!-- BIO -->
+
+    <div
+    class="music-bio"
+    id="musicBio">
+
+      DJ by Cats Musik
+
+    </div>
+
+    <!-- BUTTONS -->
+
+    <div class="music-buttons">
+
+      <!-- PREV -->
+
+      <button
+      id="prev"
+      class="music-btn">
+
+        <i class="fas fa-backward-step"></i>
+
+      </button>
+
+      <!-- PLAY -->
+
+      <button
+      id="play"
+      class="music-btn play-btn">
+
+        <i class="fas fa-pause"></i>
+
+      </button>
+
+      <!-- NEXT -->
+
+      <button
+      id="next"
+      class="music-btn">
+
+        <i class="fas fa-forward-step"></i>
+
+      </button>
+      
+  <div class="music-visualizer">
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+
+  </div>
+
+    </div>
+
+    <div class="lyrics-box">
+
+      <div class="lyrics-title">
+
+        MUSIC LYRICS
+
+      </div>
+
+      <div id="lyrics">
+
+        <p class="lyric-line">
+
+          Loading lyrics...
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<audio id="audio"></audio>
+
+<script src="database/links.js"></script>
+
+<script src="database/music.js"></script>
+
+<script src="database/stories.js"></script>
+
+<script src="database/quotes.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
